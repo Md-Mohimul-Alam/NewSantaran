@@ -14,14 +14,14 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Events from "./pages/Events";
 
-// Programs Subpages
+// Programs Sub pages
 import Harith from "./pages/Harith";
 import Shikar from "./pages/Shikar";
 import Kalpapuri from "./pages/Kalpapuri";
 import Samapran from "./pages/Samapran";
 import ArtEducation from "./pages/ArtEducation";
 
-// Projects Subpages
+// Projects Sub pages
 import YearlyOutcomeArtShow from "./pages/YearlyOutcomeArtShow";
 import ArtFactory from "./pages/ArtFactory";
 import ArtistResidency from "./pages/ArtistResidency";
@@ -33,7 +33,7 @@ import DharitriEcoTourism from "./pages/DharitriEcoTourism";
 // Initiatives / Art Education
 import KalpalokerCitra from "./pages/KalpalokerCitra";
 
-// Events Subpages
+// Events Sub pages
 import MultidisciplinaryArtShow from "./pages/MultidisciplinaryArtShow";
 import KarnaphuliFolk from "./pages/KarnaphuliFolk";
 
@@ -58,14 +58,14 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />
-          {/* Programs Subpages */}
+          {/* Programs Sub pages */}
           <Route path="/Programs/harith" element={<Harith />} />
           <Route path="/Programs/shikar" element={<Shikar />} />
           <Route path="/Programs/kalpapuri" element={<Kalpapuri />} />
           <Route path="/Programs/samapran" element={<Samapran />} />
           <Route path="/Programs/art-education" element={<ArtEducation />} />
 
-          {/* Projects Subpages */}
+          {/* Projects Sub pages */}
           <Route path="/projects/yearly-outcome" element={<YearlyOutcomeArtShow />} />
           <Route path="/projects/art-factory" element={<ArtFactory />} />
           <Route path="/projects/artist-residency" element={<ArtistResidency />} />
@@ -75,10 +75,10 @@ const App = () => (
           <Route path="/projects/kandrabindu" element={<KandrabinduCommunity />} />
           <Route path="/projects/dharitri" element={<DharitriEcoTourism />} />
 
-          {/* Initiatives Subpages */}
+          {/* Initiatives Sub pages */}
           <Route path="/Initiatives/kalpaloker-citra" element={<KalpalokerCitra />} />
 
-          {/* Events Subpages */}
+          {/* Events Sub pages */}
           <Route path="/Events/multidisciplinary" element={<MultidisciplinaryArtShow />} />
           <Route path="/Events/karnaphuli" element={<KarnaphuliFolk />} />
 

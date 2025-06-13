@@ -61,16 +61,11 @@ const mainMenuItems: MenuItem[] = [
   { 
     name: "Research", 
     href: "/research", 
-    submenu: [
-      { name: "All Research", href: "/research/all" },
-    ],
   },
   {
     name: "Publication",
     href: "/publication",
-    submenu: [
-      { name: "All Publications", href: "/publication/all" },
-    ],
+
   },
   { name: "Contact", href: "/contact" },
 ];
