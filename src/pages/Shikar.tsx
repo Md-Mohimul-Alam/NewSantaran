@@ -16,29 +16,53 @@ const Shikar = () => {
 
   const collections = [
     {
-      title: "Traditional Hunting Songs",
-      description: "Ancient melodies sung during tribal hunting expeditions",
-      image: "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg",
-      songs: "45 recordings",
-      region: "Chittagong Hill Tracts",
-      year: "2020-2023"
-    },
-    {
-      title: "Folklore Narratives",
-      description: "Oral traditions and stories passed down through generations",
-      image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg",
-      songs: "62 stories",
-      region: "Sylhet Region",
-      year: "2019-2022"
-    },
-    {
-      title: "Ritual Chants",
+      year: "2008",
+      title: "Mithila Art Workshop",
       description: "Sacred songs performed during traditional ceremonies",
       image: "https://images.pexels.com/photos/1269968/pexels-photo-1269968.jpeg",
-      songs: "38 chants",
-      region: "Mymensingh",
-      year: "2021-2023"
-    }
+      artist: "Artist Shyamasundar Yadav", 
+      region:"Nepal"
+    },
+    {
+      year: "2009",
+      title: "Patachitra (Narrative Scroll Painting) Workshop",
+      description: "Sacred songs performed during traditional ceremonies",
+      image: "https://images.pexels.com/photos/1269968/pexels-photo-1269968.jpeg",
+      artist: "Artist Manimala Chitrakar",
+      region: "India"
+    },
+    {
+      year: "2010",
+      title: "Rikswa Painting Workshop",
+      description: "Sacred songs performed during traditional ceremonies",
+      image: "https://images.pexels.com/photos/1269968/pexels-photo-1269968.jpeg",
+      artist: "Artist Majnu",
+      region:"Bangladesh"
+    },
+    {
+      year: "2010",
+      title: "Cinema-Banner Painting Workshop",
+      description: "Sacred songs performed during traditional ceremonies",
+      image: "https://images.pexels.com/photos/1269968/pexels-photo-1269968.jpeg",
+      artist: "Artist Abdul Hanif (Pappu Ustad)",
+      region:"Bangladesh"
+    },
+    {
+      year: "2015",
+      title: "The Bridge — Traditional Thangka Painting Workshop",
+      description: "Sacred songs performed during traditional ceremonies",
+      image: "https://images.pexels.com/photos/1269968/pexels-photo-1269968.jpeg",
+      artist: "Artist Dorjee Gurung Lama",
+      region:"Nepal"
+    },
+    {
+      year: "2019",
+      title: "The Bridge 2 — Patachitra & Palm Leaf Engraving Workshop",
+      description: "Sacred songs performed during traditional ceremonies",
+      image: "https://images.pexels.com/photos/1269968/pexels-photo-1269968.jpeg",
+      artist: "Artists Sharat Kumar Sahoo & Prashanta Kumar",
+      region: "Odisha, India"
+    },
   ];
 
   const activities = [
@@ -53,7 +77,7 @@ const Shikar = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-santaran-charcoal to-santaran-teal">
+      <div className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-santaran-charcoal to-santaran-teal">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: "url('https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg')" }}
@@ -62,9 +86,37 @@ const Shikar = () => {
           <h1 className={`text-4xl md:text-6xl font-dancing-script font-bold text-white mb-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} text-shadow-artistic`}>
             Shikar
           </h1>
-          <p className={`text-xl text-white/90 max-w-3xl mx-auto transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <p className={`text-xl italic pb-4 text-white/90 max-w-3xl mx-auto transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             Sustaining the Spirit of Folk Arts          
           </p>
+           <p className={`text-lg text-justify text-white/90 max-w-3xl mx-auto transition-all duration-1000 delay-500 ${
+                isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+              }`}>
+                Since 2008, Santaran’s Shikar program has been a beacon for reviving and preserving the rich
+                heritage of Bangladesh’s folk arts and crafts. It unveils indigenous wisdom by exploring vibrant
+                traditions, securing their place in contemporary art.
+              </p>
+              <p className={`text-lg text-justify text-white/90 max-w-3xl mx-auto transition-all duration-1000 delay-500 ${
+                isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+              }`}>
+                Folk and popular arts reflect the depths of human experience—rooted in community, myth, and
+                spirit. Shikar highlights the universal bonds across global folk traditions, showcasing these
+                timeless expressions amid today’s cultural flow.
+              </p>
+              <p className={`text-lg text-justify text-white/90 max-w-3xl mx-auto transition-all duration-1000 delay-500 ${
+                isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+              }`}>
+                Through careful documentation and dynamic programs—workshops, exhibitions, and
+                performances—Shikar bridges tradition and modern creativity, illuminating Bangladesh’s folk
+                arts on the world stage.
+              </p>
+              <p className={`text-lg text-justify text-white/90 max-w-3xl mx-auto transition-all duration-1000 delay-500 ${
+                isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+              }`}>
+                By nurturing a new performance language grounded in indigenous knowledge, Shikar honors the
+                artists and communities who sustain these legacies, inspiring future generations to keep this
+                vibrant heritage alive.
+              </p>
         </div>
       </div>
 
@@ -75,9 +127,7 @@ const Shikar = () => {
             <h2 className="text-3xl md:text-4xl font-cormorant font-bold mb-6 text-santaran-charcoal">
               Our Collections
             </h2>
-            <p className="text-lg text-santaran-charcoal/80 max-w-3xl mx-auto">
-              Discover the rich musical heritage of Bangladesh through our carefully curated collection of traditional songs and stories.
-            </p>
+
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -97,10 +147,6 @@ const Shikar = () => {
                 <CardContent>
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center gap-2">
-                      <Music className="h-4 w-4 text-santaran-teal" />
-                      <span className="text-santaran-charcoal font-medium">{collection.songs}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
                       <MapPin className="h-4 w-4 text-santaran-terracotta" />
                       <span className="text-santaran-charcoal/70">{collection.region}</span>
                     </div>
@@ -109,7 +155,7 @@ const Shikar = () => {
                       <span className="text-santaran-charcoal/70">{collection.year}</span>
                     </div>
                   </div>
-                  <Button className="w-full bg-santaran-teal hover:bg-santaran-teal/90 text-white shimmer-text">
+                  <Button>
                     Explore Collection
                   </Button>
                 </CardContent>

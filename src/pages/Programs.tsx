@@ -46,8 +46,8 @@ const Programs = () => {
       participants: "40+ Cross-Field Artists"
     },
     {
-      title: "Art Education",
-      slug: "education",
+      title: "Institute",
+      slug: "Institute",
       description: "Building creative capacity through experimental, indigenous, and applied learning modules.",
       image: "https://images.pexels.com/photos/4144095/pexels-photo-4144095.jpeg",
       location: "Santaran Learning Studio",

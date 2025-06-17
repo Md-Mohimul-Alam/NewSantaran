@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Programs from "./pages/Programs";
 import Projects from "./pages/Projects";
+import Initiatives from "./pages/Initiatives";
 import Publication from "./pages/Publication";
 import Research from "./pages/Research";
 import About from "./pages/About";
@@ -19,6 +20,7 @@ import Harith from "./pages/Harith";
 import Shikar from "./pages/Shikar";
 import Kalpapuri from "./pages/Kalpapuri";
 import Samapran from "./pages/Samapran";
+import Institute from "./pages/Institute";
 import ArtEducation from "./pages/ArtEducation";
 
 // Projects Sub pages
@@ -36,9 +38,15 @@ import KalpalokerCitra from "./pages/KalpalokerCitra";
 // Events Sub pages
 import MultidisciplinaryArtShow from "./pages/MultidisciplinaryArtShow";
 import KarnaphuliFolk from "./pages/KarnaphuliFolk";
+import KarnaphuliFolk2 from "./pages/KarnaphuliFolk2";
 
 // Art for Young
 import YoungArtExhibition from "./pages/YoungArtExhibition";
+
+
+import Workshops from "./pages/Workshops";
+import Seminars from "./pages/Seminars";
+import Exhibitions from "./pages/Exhibitions";
 
 const queryClient = new QueryClient();
 
@@ -53,6 +61,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/Programs" element={<Programs />} />
           <Route path="/Projects" element={<Projects />} />
+          <Route path="/Initiatives" element={<Initiatives />} />
           <Route path="/publication" element={<Publication />} />
           <Route path="/Research" element={<Research />} />
           <Route path="/about" element={<About />} />
@@ -63,7 +72,14 @@ const App = () => (
           <Route path="/Programs/shikar" element={<Shikar />} />
           <Route path="/Programs/kalpapuri" element={<Kalpapuri />} />
           <Route path="/Programs/samapran" element={<Samapran />} />
+          <Route path="/Programs/institute" element={<Institute />} />
           <Route path="/Programs/art-education" element={<ArtEducation />} />
+
+          {/*Initiatives*/}
+          <Route path="/projects/kalpapuri-school" element={<KalpapuriSchool />} />
+          <Route path="/projects/kandrabindu" element={<KandrabinduCommunity />} />
+          <Route path="/projects/dharitri" element={<DharitriEcoTourism />} />
+          <Route path="/Initiatives/kalpaloker-citra" element={<KalpalokerCitra />} />
 
           {/* Projects Sub pages */}
           <Route path="/projects/yearly-outcome" element={<YearlyOutcomeArtShow />} />
@@ -71,16 +87,16 @@ const App = () => (
           <Route path="/projects/artist-residency" element={<ArtistResidency />} />
           <Route path="/projects/art-can-fly" element={<ArtCanFly />} />
           <Route path="/projects/research" element={<Research />} />
-          <Route path="/projects/kalpapuri-school" element={<KalpapuriSchool />} />
-          <Route path="/projects/kandrabindu" element={<KandrabinduCommunity />} />
-          <Route path="/projects/dharitri" element={<DharitriEcoTourism />} />
+          <Route path="/projects/workshops" element={<Workshops />} />
+          <Route path="/projects/seminar" element={<Seminars />} />
+          <Route path="/projects/exhibitions" element={<Exhibitions />} />
 
-          {/* Initiatives Sub pages */}
-          <Route path="/Initiatives/kalpaloker-citra" element={<KalpalokerCitra />} />
+
 
           {/* Events Sub pages */}
           <Route path="/Events/multidisciplinary" element={<MultidisciplinaryArtShow />} />
           <Route path="/Events/karnaphuli" element={<KarnaphuliFolk />} />
+          <Route path="/Events/karnaphuli-folk-2" element={<KarnaphuliFolk2 />} />
 
           {/* Art for Young */}
           <Route path="/art-for-young/exhibition" element={<YoungArtExhibition />} />

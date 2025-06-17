@@ -14,30 +14,24 @@ const Kalpapuri = () => {
     setIsVisible(true);
   }, []);
 
-  const courses = [
+  const activities = [
     {
-      title: "Traditional Painting",
-      description: "Explore classical Bengali painting techniques and folk art traditions",
-      image: "https://images.pexels.com/photos/1269968/pexels-photo-1269968.jpeg",
-      duration: "3 months",
-      level: "Beginner",
-      price: "$150"
-    },
-    {
-      title: "Contemporary Art",
+      title: "Langri para",
       description: "Modern artistic expressions and mixed media techniques",
       image: "https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg",
-      duration: "4 months",
-      level: "Intermediate",
-      price: "$200"
+      Location: "Ministry of Social Welfare, Rowfabad, Chittagong.",
     },
     {
-      title: "Sculpture & Clay",
+      title: "Shishu Poribar",
       description: "Three-dimensional art forms and ceramic techniques",
       image: "https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg",
-      duration: "6 months",
-      level: "All Levels",
-      price: "$250"
+      Location: "Alikadam Bandarban Hilly district, Chittagong.",
+    },
+    {
+      title: "Shishu Poribar",
+      description: "Three-dimensional art forms and ceramic techniques",
+      image: "https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg",
+      Location: "Alikadam Bandarban Hilly district, Chittagong.",
     }
   ];
 
@@ -68,41 +62,39 @@ const Kalpapuri = () => {
         </div>
       </div>
 
-      {/* Courses Section */}
+      {/* activities Section */}
       <div className="py-20 bg-santaran-cream">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-6 text-santaran-charcoal">
-              Featured Courses
+              Kalpapuri's ongoing activities
             </h2>
-            <p className="text-lg text-santaran-charcoal/80 max-w-3xl mx-auto">
-              Discover your artistic potential through our carefully curated curriculum designed for all skill levels.
+            <p className="text-lg text-justify text-santaran-charcoal/80 max-w-3xl mx-auto">
+              Kalpapuri, a lasting public art initiative by Santaran, celebrates the magical world of children's creativity—where imagination and wonder take flight. Observing the pressures that weigh down young minds, Santaran began nurturing a healthy bond between Bengali and Pahari children through art workshops in Alikadam from 2000 to 2008. Officially launched as a permanent program in 2009, Kalpapuri supports children aged 6 to 12, guiding them to become thoughtful, creative leaders of tomorrow’s generations. Through eco-friendly artistic training and outreach projects like Kalpoloker Chitra, Santaran spread awareness of child psychology, fostering a future rich in imagination, cultural harmony, and artistic values.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {courses.map((course, index) => (
+            {activities.map((activities, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                 <div className="aspect-[4/3] overflow-hidden rounded-t-lg">
                   <img 
-                    src={course.image} 
-                    alt={course.title}
+                    src={activities.image} 
+                    alt={activities.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-santaran-charcoal font-playfair">{course.title}</CardTitle>
-                  <CardDescription>{course.description}</CardDescription>
+                  <CardTitle className="text-santaran-charcoal font-playfair">{activities.title}</CardTitle>
+                  <CardDescription>{activities.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex justify-between items-center mb-4 text-sm">
-                    <span className="text-santaran-teal font-medium">{course.duration}</span>
-                    <span className="text-santaran-terracotta font-medium">{course.level}</span>
+                    <span className="text-santaran-terracotta font-medium"> Location: {activities.Location}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-2xl font-bold text-santaran-charcoal">{course.price}</span>
                     <Button className="bg-santaran-teal hover:bg-santaran-teal/90 text-white">
-                      Enroll Now
+                      View Details
                     </Button>
                   </div>
                 </CardContent>

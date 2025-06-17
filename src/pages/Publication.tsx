@@ -99,9 +99,9 @@ const Publication = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-santaran-charcoal">
-              Featured Publications
+              Our Publications
             </h2>
-            <p className="text-lg text-santaran-charcoal/80 max-w-3xl mx-auto">
+            <p className="text-lg text-justify text-santaran-charcoal/80 max-w-3xl mx-auto">
               Since 1999, Santaran Art Organization has dedicated itself to publishing and preserving the
               visual and intellectual essence of its artistic journey. With nearly 19 publications to date, these
               works capture the diverse activities and creative explorations of the organization. Santaran’s
@@ -112,64 +112,14 @@ const Publication = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            {publications.filter(pub => pub.featured).map((publication, index) => (
-              <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="aspect-[16/9] overflow-hidden">
-                  <img 
-                    src={publication.image} 
-                    alt={publication.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-8">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="px-3 py-1 bg-santaran-teal/10 text-santaran-teal rounded-full text-sm font-medium">
-                      {publication.type}
-                    </span>
-                    <span className="text-santaran-charcoal/60 text-sm">{publication.year}</span>
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4 text-santaran-charcoal">{publication.title}</h3>
-                  <p className="text-santaran-charcoal/70 mb-6">{publication.description}</p>
-                  
-                  <div className="grid grid-cols-2 gap-4 mb-6 text-sm">
-                    <div className="flex items-center text-santaran-teal">
-                      <BookOpen className="h-4 w-4 mr-2" />
-                      {publication.pages}
-                    </div>
-                    <div className="flex items-center text-santaran-teal">
-                      <Download className="h-4 w-4 mr-2" />
-                      {publication.downloads} downloads
-                    </div>
-                  </div>
-
-                  <div className="flex gap-3">
-                    <Button className="flex-1 bg-santaran-teal hover:bg-santaran-teal/90 text-white">
-                      <Download className="h-4 w-4 mr-2" />
-                      Download PDF
-                    </Button>
-                    <Button variant="outline" className="border-santaran-teal text-santaran-teal hover:bg-santaran-teal/10">
-                      <Eye className="h-4 w-4" />
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+         
         </div>
       </div>
 
       {/* All Publications */}
       <div className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-santaran-charcoal">
-              All Publications
-            </h2>
-            <p className="text-lg text-santaran-charcoal/80 max-w-3xl mx-auto">
-              Browse our complete archive of publications spanning research, documentation, and educational materials.
-            </p>
-          </div>
+          
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {publications.map((publication, index) => (

@@ -39,40 +39,114 @@ const YearlyOutcomeArtShow = () => {
 
   const artworks = [
     {
-      title: "Urban Metamorphosis",
-      artist: "Rashida Ahmed",
-      medium: "Mixed Media on Canvas",
-      dimensions: "120 x 90 cm",
-      price: "BDT 85,000",
+      title: "Santaran",
+      meaning:"The Swim",
+      organizer: "Alliance Française",
+      location: "Chittagong",
+      Year: "1999",
       image: "https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg",
-      description: "A powerful exploration of urbanization's impact on traditional life"
+      description: "A powerful exploration of urbanization's impact on traditional life",
+      seq: "1"
     },
     {
-      title: "Digital Dreams",
-      artist: "Kamal Hassan",
-      medium: "Digital Art Installation",
-      dimensions: "Variable",
-      price: "BDT 120,000",
+      title: "Sahasrabder Chabi",
+      meaning:"Images of the Millennium",
+      organizer: "Chittagong Club",
+      location: "Chittagong",
+      Year: "2000",
       image: "https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg",
-      description: "Interactive digital piece exploring technology and humanity"
+      description: "Interactive digital piece exploring technology and humanity",
+      seq: "2"
     },
     {
-      title: "Memory Fragments",
-      artist: "Fatima Begum",
-      medium: "Photography Series",
-      dimensions: "60 x 40 cm each",
-      price: "BDT 45,000",
+      title: "Pahela Baishakh",
+      meaning:"The First Day of Bengali Year",
+      organizer: "Alliance Française",
+      location: "Chittagong",
+      Year: "2002",
       image: "https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg",
-      description: "Nostalgic journey through forgotten spaces and moments"
+      description: "Nostalgic journey through forgotten spaces and moments",
+      seq: "3"
     },
     {
-      title: "Contemporary Rhythms",
-      artist: "Nasir Uddin",
-      medium: "Acrylic on Canvas",
-      dimensions: "150 x 100 cm",
-      price: "BDT 95,000",
+      title: "Cultural Heritage of Chittagong ",
+      meaning:"Cultural Heritage of Chittagong ",
+      organizer: "Indian Cultural Centre",
+      location: "Dhaka",
+      Year: "2002",
       image: "https://images.pexels.com/photos/1742370/pexels-photo-1742370.jpeg",
-      description: "Abstract interpretation of modern life's complexities"
+      description: "Abstract interpretation of modern life's complexities",
+      seq: "4"
+    },
+    {
+      title: "Ekush Moder Garab",
+      meaning: "Proud of 21st February",
+      organizer: "Shilpakala Academy",
+      location: "Chittagong",
+      Year: "2003",
+      image: "https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg",
+      description: "A tribute to the language martyrs of Bangladesh",
+      seq: "5"
+    },
+    {
+      title: "Bhanumatir Khel",
+      meaning: "The Tricky Magical Game",
+      organizer: "Shilpakala Academy",
+      location: "Chittagong",
+      Year: "2003",
+      image: "https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg",
+      description: "Exploration of childhood memories and games",
+      seq: "6"
+    },
+    {
+      title: "Thought Wave",
+      meaning: "Thought Wave",
+      organizer: "Nalinikanta Bhattashali Art Gallery, National Museum",
+      location: "Dhaka",
+      Year: "2005",
+      image: "https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg",
+      description: "A conceptual piece on the flow of ideas and creativity",
+      seq: "7"
+    },
+    {
+      title: "Unity in Diversity",
+      meaning: "Unity in Diversity",
+      organizer: "Nepal Art Council Gallery",
+      location: "Kathmandu, Nepal",
+      Year: "2007",
+      image: "https://images.pexels.com/photos/1742370/pexels-photo-1742370.jpeg",
+      description: "Celebration of cultural diversity through art",
+      seq: "8"
+    },
+    {
+      title: "Introspection",
+      meaning: "Introspection",
+      organizer: "Nalinikanta Bhattashali Art Gallery, National Museum",
+      location: "Dhaka",
+      Year: "2009",
+      image: "https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg",
+      description: "A personal reflection on the artist's journey",
+      seq: "9"
+    },
+    {
+      title: "Time Art and Space",
+      meaning: "1st Multidisciplinary Art Show, 12th Anniversary",
+      organizer: "Rashid Chowdhury Art Gallery, Institute of Fine Arts",
+      location: "University of Chittagong",
+      Year: "2011",
+      image: "https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg",
+      description: "Exploration of time and space through various mediums",
+      seq: "10"
+    },
+    {
+      title: "From the Karnaphuli",
+      meaning:"2nd Multidisciplinary Art Show",
+      organizer:"Residence of Italian Ambassador", 
+      location:"Dhaka", 
+      Year:"2012", 
+      image:"https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg", 
+      description:"A tribute to the Karnaphuli River and its significance",
+      seq:"11"
     }
   ];
 
@@ -90,11 +164,12 @@ const YearlyOutcomeArtShow = () => {
         
         <div className="container mx-auto px-6 text-center relative z-10">
           <h1 className={`text-5xl md:text-7xl font-bold text-white mb-8 transition-all duration-1000 font-playfair ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
-            Yearly Outcome
-            <span className="block text-santaran-gold italic">Art Show 2025</span>
+            <span className="block text-santaran-gold italic">Yearly Outcome</span>
           </h1>
-          <p className={`text-xl md:text-2xl text-white/90 max-w-4xl mx-auto transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
-            Celebrating a year of artistic excellence and creative innovation
+          <p className={`text-lg text-justify text-white/90 max-w-3xl mx-auto transition-all duration-1000 delay-500 ${
+                isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+              }`}>
+            For over twenty years, Santaran has been a dynamic platform where member organizers unfold their research-driven visions, engaging audiences both locally and globally. Since 1999, this creative voyage has welcomed new mediums and ideas, beginning with intimate exhibitions of personal insight. In 1999, the groundbreaking Site-Specific organizer Camp ignited a creative surge that led to the first Multi-Disciplinary Art Exhibition in 2005 at the National Museum. Today, Santaran carries forward this spirit, celebrating diverse and boundary-breaking art through annual showcases that unite communities through the transformative power of creativity.
           </p>
           
           <div className={`mt-12 flex flex-wrap justify-center gap-6 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
@@ -108,7 +183,7 @@ const YearlyOutcomeArtShow = () => {
             </div>
             <div className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
               <Users className="h-5 w-5 mr-3 text-santaran-gold" />
-              <span className="text-white font-medium">45+ Featured Artists</span>
+              <span className="text-white font-medium">45+ Featured organizers</span>
             </div>
           </div>
         </div>
@@ -119,7 +194,7 @@ const YearlyOutcomeArtShow = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-santaran-charcoal font-playfair">
-              Featured <span className="text-santaran-terracotta italic">Artworks</span>
+              <span className="text-santaran-terracotta italic">Exhibition Highlights</span>
             </h2>
             <p className="text-lg text-santaran-charcoal/80 max-w-3xl mx-auto">
               Discover the most compelling pieces from this year's exhibition
@@ -163,7 +238,7 @@ const YearlyOutcomeArtShow = () => {
                     {artwork.title}
                   </CardTitle>
                   <CardDescription className="text-santaran-teal font-medium text-lg">
-                    by {artwork.artist}
+                    by {artwork.organizer}
                   </CardDescription>
                 </CardHeader>
 
@@ -174,18 +249,18 @@ const YearlyOutcomeArtShow = () => {
                   
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     <div>
-                      <span className="font-medium text-santaran-charcoal">Medium:</span>
-                      <p className="text-santaran-charcoal/70">{artwork.medium}</p>
+                      <span className="font-medium text-santaran-charcoal">location:</span>
+                      <p className="text-santaran-charcoal/70">{artwork.location}</p>
                     </div>
                     <div>
-                      <span className="font-medium text-santaran-charcoal">Dimensions:</span>
-                      <p className="text-santaran-charcoal/70">{artwork.dimensions}</p>
+                      <span className="font-medium text-santaran-charcoal">Year:</span>
+                      <p className="text-santaran-charcoal/70">{artwork.Year}</p>
                     </div>
                   </div>
 
                   <div className="flex items-center justify-between pt-4 border-t border-santaran-cream">
                     <span className="text-2xl font-bold text-santaran-terracotta font-playfair">
-                      {artwork.price}
+                      {artwork.seq}
                     </span>
                     <div className="flex gap-2">
                       <Button 
@@ -194,12 +269,6 @@ const YearlyOutcomeArtShow = () => {
                         className="border-santaran-teal text-santaran-teal hover:bg-santaran-teal hover:text-white transition-all duration-300"
                       >
                         View Details
-                      </Button>
-                      <Button 
-                        size="sm"
-                        className="bg-santaran-terracotta hover:bg-santaran-terracotta/90 text-white transition-all duration-300"
-                      >
-                        Inquire
                       </Button>
                     </div>
                   </div>
@@ -223,14 +292,14 @@ const YearlyOutcomeArtShow = () => {
                   <Award className="h-6 w-6 text-santaran-gold mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-lg mb-2">Curatorial Excellence</h4>
-                    <p className="text-white/80">Carefully curated selection representing the finest contemporary works from established and emerging artists.</p>
+                    <p className="text-white/80">Carefully curated selection representing the finest contemporary works from established and emerging organizers.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Users className="h-6 w-6 text-santaran-gold mr-4 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-bold text-lg mb-2">Artist Talks</h4>
-                    <p className="text-white/80">Join intimate conversations with featured artists every weekend during the exhibition period.</p>
+                    <h4 className="font-bold text-lg mb-2">organizer Talks</h4>
+                    <p className="text-white/80">Join intimate conversations with featured organizers every weekend during the exhibition period.</p>
                   </div>
                 </div>
                 <div className="flex items-start">

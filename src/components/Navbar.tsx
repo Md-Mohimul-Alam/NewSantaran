@@ -23,7 +23,7 @@ const mainMenuItems: MenuItem[] = [
       { name: "Kalpapuri", href: "/Programs/kalpapuri" },
       { name: "Shikar", href: "/Programs/shikar" },
       { name: "Samapran", href: "/Programs/samapran" },
-      { name: "Institute", href: "/Programs/art-education" },
+      { name: "Institute", href: "/Programs/institute" },
     ],
   },
   {
@@ -44,16 +44,17 @@ const mainMenuItems: MenuItem[] = [
       { name: "Art Factory", href: "/projects/art-factory" },
       { name: "Artist Residency", href: "/projects/artist-residency" },
       { name: "Art Can Fly", href: "/projects/art-can-fly" },
-      { name: "Workshops", href: "/other-activities/workshops" },
-      { name: "Seminars", href: "/other-activities/seminar" },
-      { name: "Exhibitions", href: "/other-activities/exhibitions" },
+      { name: "Workshops", href: "/projects/workshops" },
+      { name: "Seminars", href: "/projects/seminar" },
+      { name: "Exhibitions", href: "/projects/exhibitions" },
     ],
   },
   {
     name: "Events",
     href: "/Events",
     submenu: [
-      { name: "Karnaphuli Folk Triennale", href: "/Events/karnaphuli" },
+      { name: "Karnaphuli Folk Triennale 1st", href: "/Events/karnaphuli" },
+      { name: "Karnaphuli Folk Triennale 2nd", href: "/Events/karnaphuli-folk-2" },
       { name: "Multidisciplinary Art Show", href: "/Events/multidisciplinary" },
     ],
   },
@@ -94,10 +95,16 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between p-2">
-          <a href="/" className="text-2xl font-playfair font-bold text-santaran-teal p-5">
-            Santaran
-            <span className="text-santaran-terracotta ml-1">Art</span>
+          <a href="/" className={cn(
+            "h-30 w-40 block",scrolled ? "bg-transparent " : " bg-white/95 shadow-md backdrop-blur-sm py-2"
+      )}>
+            <img 
+              src="/public/santaran-art-logo.png" 
+              alt="Santaran Art Logo" 
+              className="h-20 w-50"
+            />
           </a>
+
 
           {/* Mobile Menu Button */}
           <button

@@ -83,7 +83,7 @@ const KalpapuriSchool = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {programs.map((program, index) => (
-              <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 morphing-border">
+              <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 ">
                 <div className="aspect-[4/3] overflow-hidden rounded-t-lg">
                   <img 
                     src={program.image} 
@@ -110,7 +110,7 @@ const KalpapuriSchool = () => {
                       <span className="text-santaran-terracotta font-semibold">{program.certification}</span>
                     </div>
                   </div>
-                  <Button className="w-full bg-gradient-to-r from-santaran-teal to-santaran-terracotta hover:from-santaran-teal/90 hover:to-santaran-terracotta/90 text-white">
+                  <Button className="w-full bg-gradient-to-r bg-teal-700 to-santaran-terracotta hover:bg-teal/900 hover:to-santaran-terracotta/90 text-white">
                     Apply Now
                   </Button>
                 </CardContent>

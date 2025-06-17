@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Crown, Users, Globe, Music, Calendar, Award } from "lucide-react";
 
-const KarnaphuliFolk = () => {
+const KarnaphuliFolkSec = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -152,4 +152,4 @@ const KarnaphuliFolk = () => {
   );
 };
 
-export default KarnaphuliFolk;
+export default KarnaphuliFolkSec;

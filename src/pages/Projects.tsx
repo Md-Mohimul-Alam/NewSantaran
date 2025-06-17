@@ -46,36 +46,28 @@ const Projects = () => {
       participants: "Various Communities"
     },
     {
-      title: "Research",
-      slug: "research",
+      title: "Workshops",
+      slug: "Workshops",
       description: "Visual and contextual investigations driving knowledge and innovation in art.",
       image: "https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg",
       location: "Santaran Lab",
-      participants: "Ongoing Researchers"
+      participants: "Ongoing Workshops"
     },
     {
-      title: "Kalpapuri School",
-      slug: "kalpapuri-school",
+      title: "Seminars",
+      slug: "Seminars",
       description: "Experimental art school for children focusing on imagination, play, and learning.",
       image: "https://images.pexels.com/photos/861308/pexels-photo-861308.jpeg",
-      location: "Kalpapuri Campus",
+      location: "Seminars",
       participants: "80+ Students"
     },
     {
-      title: "Kandrabindu",
-      slug: "kandrabindu",
+      title: "Exhibitions",
+      slug: "Exhibitions",
       description: "Community-focused art and craft hub for women, artisans, and local creatives.",
       image: "https://images.pexels.com/photos/462120/pexels-photo-462120.jpeg",
-      location: "Community Centre",
+      location: "Exhibitions",
       participants: "40+ Women Artists"
-    },
-    {
-      title: "Dharitri",
-      slug: "dharitri",
-      description: "An eco-tourism art and environment initiative blending nature and creativity.",
-      image: "https://images.pexels.com/photos/1797153/pexels-photo-1797153.jpeg",
-      location: "Nature Sites",
-      participants: "Local Guides & Artists"
     }
   ];
 
