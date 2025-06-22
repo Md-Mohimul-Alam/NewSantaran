@@ -60,8 +60,14 @@ const KarnaphuliFolkSec = () => {
         />
         <div className="container mx-auto px-6 text-center relative z-10">
           <div className="mb-6">
-            <Crown className="h-16 w-16 text-santaran-gold mx-auto mb-4 floating-animation" />
-          </div>
+            <div className="h-50 w-50 mb-4 floating-animation flex items-center justify-center mx-auto">
+                <img 
+                    src="/public/karna2.jpg" 
+                    alt="Santaran Art Logo" 
+                    className="h-20 w-50"
+                />
+                </div>          
+            </div>
           <h1 className={`text-4xl md:text-6xl font-cormorant font-bold text-white mb-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} gradient-text`}>
             Karnaphuli Folk Triennial
           </h1>

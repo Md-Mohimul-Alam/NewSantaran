@@ -1,11 +1,11 @@
-
 import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Crown, Users, Globe, Music, Calendar, Award } from "lucide-react";
+import { Users, Globe, Music, Award } from "lucide-react";
+import Carousel from "@/components/ui/carousel2";
 
 const KarnaphuliFolk = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -13,6 +13,30 @@ const KarnaphuliFolk = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
+  const heroSlides = [
+    {
+      image: "https://culture360.asef.org/media/2015/8/karnaphuli.jpg",
+      logo: "/karna.jpg",
+      title: "Karnaphuli Folk Triennial",
+      description: "Celebrating the rich tapestry of South Asian folk traditions",
+      caption: "Where Rivers Meet Culture"
+    },
+    {
+      image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg",
+      logo: "/karna.jpg",
+      title: "Karnaphuli Folk Triennial",
+      description: "Celebrating the rich tapestry of South Asian folk traditions",
+      caption: "Echoes of the Past, Sounds of the People"
+    },
+    {
+      image: "https://images.pexels.com/photos/1269968/pexels-photo-1269968.jpeg",
+      logo: "/karna.jpg",
+      title: "Karnaphuli Folk Triennial",
+      description: "Celebrating the rich tapestry of South Asian folk traditions",
+      caption: "Folk Futures: A New Cultural Pulse"
+    }
+  ];
 
   const editions = [
     {
@@ -51,22 +75,12 @@ const KarnaphuliFolk = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      
-      {/* Hero Section */}
-      <div className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-santaran-terracotta via-santaran-gold to-santaran-teal">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-25"
-          style={{ backgroundImage: "url('https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg')" }}
-        />
-        <div className="container mx-auto px-6 text-center relative z-10">
-          <div className="mb-6">
-            <Crown className="h-16 w-16 text-santaran-gold mx-auto mb-4 floating-animation" />
-          </div>
-          <h1 className={`text-4xl md:text-6xl font-cormorant font-bold text-white mb-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} gradient-text`}>
-            Karnaphuli Folk Triennial
-          </h1>
-        </div>
+
+      {/* Hero Section with Carousel */}
+      <div className="relative min-h-[90vh] h-[90vh] bg-black text-white">
+        <Carousel slides={heroSlides} interval={5000} />
       </div>
+
 
       {/* Triennial Editions */}
       <div className="py-20 bg-santaran-cream">
@@ -76,12 +90,11 @@ const KarnaphuliFolk = () => {
               Triennial Editions
             </h2>
             <p className="text-lg text-justify text-santaran-charcoal/80 max-w-3xl mx-auto">
-                Santaran’s Karnaphuli Folk Triennial is a vibrant festival that honors the rich tapestry of folk, popular, and traditional arts across South Asia. Named after the mighty Karnaphuli River—an enduring symbol of culture, nature, and life in Bangladesh—the triennial explores the deep artistic and anthropological connections that bind the region’s communities.
-                Since its inaugural event in 2015, held in Chittagong and Dhaka, the festival has brought together master artists from Bangladesh, Nepal, India, Pakistan, and Japan, showcasing a dazzling array of traditional paintings, crafts, and contemporary art inspired by folk heritage. Through exhibitions, seminars, artist talks, and cultural performances, the triennial breathes life into ancient art forms while fostering dialogue between past and present.
-                The festival also honors the lifelong dedication of folk and traditional artists and researchers who preserve these living histories through their work. By celebrating indigenous creativity and its links to social life, mythology, and spirituality, the Karnaphuli Folk Triennial nurtures a renewed cultural awareness—inviting audiences to witness the enduring power of art as a bridge between generations and cultures.
-                With every edition, Santaran strengthens the vibrant pulse of folk artistry, ensuring these treasured traditions continue to inspire and evolve in a modern world.
-
-              </p>
+              Santaran’s Karnaphuli Folk Triennial is a vibrant festival that honors the rich tapestry of folk, popular, and traditional arts across South Asia. Named after the mighty Karnaphuli River—an enduring symbol of culture, nature, and life in Bangladesh—the triennial explores the deep artistic and anthropological connections that bind the region’s communities.
+              Since its inaugural event in 2015, held in Chittagong and Dhaka, the festival has brought together master artists from Bangladesh, Nepal, India, Pakistan, and Japan, showcasing a dazzling array of traditional paintings, crafts, and contemporary art inspired by folk heritage. Through exhibitions, seminars, artist talks, and cultural performances, the triennial breathes life into ancient art forms while fostering dialogue between past and present.
+              The festival also honors the lifelong dedication of folk and traditional artists and researchers who preserve these living histories through their work. By celebrating indigenous creativity and its links to social life, mythology, and spirituality, the Karnaphuli Folk Triennial nurtures a renewed cultural awareness—inviting audiences to witness the enduring power of art as a bridge between generations and cultures.
+              With every edition, Santaran strengthens the vibrant pulse of folk artistry, ensuring these treasured traditions continue to inspire and evolve in a modern world.
+            </p>
           </div>
 
           <div className="space-y-8">
@@ -131,7 +144,7 @@ const KarnaphuliFolk = () => {
           <h2 className="text-3xl md:text-4xl font-cormorant font-bold text-center mb-16 text-santaran-charcoal">
             Triennial Highlights
           </h2>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {highlights.map((highlight, index) => (
               <div key={index} className="text-center group">

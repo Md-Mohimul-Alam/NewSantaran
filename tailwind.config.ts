@@ -132,6 +132,10 @@ export default {
 				'bounce-gentle': {
 					'0%, 100%': { transform: 'translateY(-5%)' },
 					'50%': { transform: 'translateY(0)' }
+				},
+				fadeInUp: {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' },
 				}
 			},
 			animation: {
@@ -146,7 +150,8 @@ export default {
 				'shimmer': 'shimmer 3s ease-in-out infinite',
 				'morph-bg': 'morphBackground 15s ease infinite',
 				'wiggle': 'wiggle 1s ease-in-out infinite',
-				'bounce-gentle': 'bounce-gentle 2s ease-in-out infinite'
+				'bounce-gentle': 'bounce-gentle 2s ease-in-out infinite',
+				'fade-in-up': 'fadeInUp 0.8s ease-out forwards'
 			},
 			backdropBlur: {
 				xs: '2px'
