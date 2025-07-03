@@ -52,7 +52,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides, interval = 5000 }) => {
               alt={`Slide ${idx + 1}`}
               className="w-full h-full object-cover"
             />
-
+            <div className="absolute inset-0 bg-black/50 z-0" />
             {/* Overlayed text content */}
             {isActive && (
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
@@ -71,7 +71,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides, interval = 5000 }) => {
                   </h1>
                 )}
                 {slide.description && (
-                  <p className="mt-4 text-lg md:text-xl text-white animate-fade-in-up delay-300">
+                  <p className="mt-4 text-lg md:text-xl text-white animate-fade-in-up delay-500">
                     {slide.description}
                   </p>
                 )}
@@ -84,7 +84,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides, interval = 5000 }) => {
             {slide.caption && (
               <div className="absolute bottom-10 w-full text-center">
                 <p
-                  className={`text-xl md:text-2xl font-semibold text-white transition-opacity duration-1000 ${
+                  className={`text-xl md:text-2xl  text-white transition-opacity duration-1000 animate-fade-in-up delay-500 ${
                     isActive ? "opacity-100" : "opacity-0"
                   }`}
                 >
